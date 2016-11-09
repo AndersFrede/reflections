@@ -5,3 +5,18 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 - The staging area contains files in a sort of limbo. They aren't untracked anymore, but they haven't had commits attached to them yet either.
 - It allows more control over which files are tracked with commits.
+
+How can you use the staging area to make sure you have one commit per logical change?
+- By monitoring which files have been staged by using git status. If files with different logical changes have been added together, they should be split up again.
+
+What are some situations when branches would be helpful in keeping your history organized? How would brances help?
+- When experimenting with new features.
+- When translating from one language to another.
+- It helps by allowing you to keep the original version as well as the altered on.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+- The result of merging two branches together is to implement the changes made  to the master file.
+- It is represented in that way to indicate that the merge masters both of the branches.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+- It is faster for Git to merge two commits than to do it manually, however if both commits have altered the same part, it can be easier to just do it manually, as you will have to go resolve an eventual conflict in the merging.
